@@ -9,7 +9,7 @@ export const config = () => {
             FACEBOOK_CLIENT_SECRET: string;
             MONGO_URI: string;
         }>({
-            PUBLIC_URL: Joi.string().required(),
+            PUBLIC_URL: Joi.string(),
             FACEBOOK_CLIENT_ID: Joi.string().required(),
             FACEBOOK_CLIENT_SECRET: Joi.string().required(),
             MONGO_URI: Joi.string().required(),
