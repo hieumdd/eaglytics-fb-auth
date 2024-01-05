@@ -52,7 +52,9 @@ jobs:
           image: ${{ env.IMAGE }}
           timeout: 500s
           secrets: |
-            DOPPLER_TOKEN=DOPPLER_TOKEN:latest
+            FACEBOOK_CLIENT_ID=FACEBOOK_CLIENT_ID:latest
+            FACEBOOK_CLIENT_SECRET=FACEBOOK_CLIENT_SECRET:latest
+            MONGO_URI=MONGO_URI:latest
           flags: |
             --service-account ${{ env.GCP_SA }}
             --allow-unauthenticated
