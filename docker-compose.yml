@@ -1,0 +1,8 @@
+services:
+    app:
+        image: eaglytics-fb-auth
+        build: .
+        platform: linux/amd64
+        env_file: .env
+        ports:
+            - 8080:8080
