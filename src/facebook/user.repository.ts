@@ -1,8 +1,8 @@
-import { withMongoConnection } from "../mongo.service";
+import { withMongoConnection } from '../mongo.service';
 
 export type User = {
-  id: string;
-  access_token: string;
+    id: string;
+    access_token: string;
 };
 
-export const userRepository = withMongoConnection<User>("user");
+export const userRepository = withMongoConnection<User>('user');
